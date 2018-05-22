@@ -1,0 +1,156 @@
+<!-- <!DOCTYPE html> -->
+<html>
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "Stylesheet.css">
+    <script src="jquery.js"></script>
+    <script src="data_generator.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js"></script> --> 
+  </head>
+  <body>
+   <div id="paralaxImage">
+    <center> <h1> <u> Twittler </u> </h1> </center>
+  </div>
+  <div id="ContentBlock" >
+    <div id="functionality">
+      <h2> Functionality </h2>
+      <p> Twittler is sample project featured in the precourse section of the Hack-reactor immersive course. It I my hope that It serves as a demonstratiuons of my current HTML and CSS abilities. While I may consider coming back to Twittler and building out more functionality in the future, due to time constraints, it remains thusly. </p>
+    </div>
+
+    <div class = "contentDiv" id= "readTweets" >
+      <button type = "button" id = "button1"> Click me to show tweets  </button>
+      <div id = "Tweets" class = "nonContentDiv"> 
+
+      </div>
+    </div>
+
+    <div id = "userTimelines" class ="contentDiv">
+      <p> Below are the listed user timelines, click on the button corresponding to the respective user timeline. Note, if the user has a history of more than 10 tweets, it will only show the most recent 10. </p>
+      <div id = "buttonRow">
+        <button type = "button" id = "button2"> Click me to show user1's tweets  </button>
+        <button type = "button" id = "button3"> Click me to show user2's tweets  </button>
+        <button type = "button" id = "button4"> Click me to show user3's tweets  </button>
+        <button type = "button" id = "button5"> Click me to show user4's tweets  </button>
+      </div>
+      <div id= 'timeline' class = "nonContentDiv">
+      </div>
+    </div>
+
+<!--     <div id = "liveTweeting" class ="contentDiv">
+      <p> Here, the user will be able to "live tweet". Dont be fooled, these are only the locally generated tweets, but it should work for local tweets </p>
+
+    </div> -->
+
+     <script> 
+
+
+
+       
+       $(document).ready(function(){
+
+
+        var appendTweets = function (location, userNumber) {
+          if (userNumber == undefined) {
+          var index = streams.home.length - 1;
+            for (var i = index; i > index - 10; i--) {
+              var tweet = streams.home[i];
+              var $tweet = $('<div class = "tweet"></div>');
+              var timestamp = streams.home[i].created_at;
+              $tweet.text('@' + tweet.user + ': ' + tweet.message + " | created at: " + timestamp); //adds thw text to the tweet
+              $tweet.appendTo(location);
+            }
+          }
+          else {
+            var user;
+            //find User
+            if (userNumber === 1)
+              user = streams.users.shawndrost;
+            else if (userNumber === 2) 
+              user = streams.users.sharksforcheap;
+            else if (userNumber === 3) 
+              user = streams.users.mracus;
+            else if (userNumber === 4) 
+              user = streams.users.douglascalhoun;
+
+            var index = user.length -1;
+            var tweet = streams.home[i];
+            var a;
+
+            if (index < 10) {
+              var a = 0;
+            }
+            else {
+              a = index - 9;
+            }
+            for (var i = index; i >= a; i--) {
+              var tweet = user[i];
+              var $tweet = $('<div class = "tweet"></div>');
+              var timestamp = user[i].created_at;
+              $tweet.text('@' + tweet.user + ': ' + tweet.message + " | | | created at: " + timestamp); //adds the text to the tweet
+              $tweet.appendTo(location);
+            }
+          }
+        }
+
+        var removeTweets = function (location) {
+          location.empty();
+        }
+
+
+          $("#button1").on("click", function () {
+             var location = $(this).closest('#readTweets').find('#Tweets');
+             removeTweets(location);
+             $(this).closest('#readTweets').find('#Tweets').slideToggle();
+             appendTweets(location);
+          });
+
+          $("#button2").on("click", function () {
+              //first needs to clear data
+              var location = $(this).closest('#buttonRow').closest('#userTimelines').find('#timeline');
+              removeTweets(location);
+              appendTweets(location, 1);
+              location.slideUp().slideDown();
+             
+
+          });
+
+          $("#button3").on("click", function () {
+              var location = $(this).closest('#buttonRow').closest('#userTimelines').find('#timeline');
+              removeTweets(location);
+              appendTweets(location, 2);
+              location.slideUp().slideDown();
+
+             
+          });
+
+          $("#button4").on("click", function () {
+              var location = $(this).closest('#buttonRow').closest('#userTimelines').find('#timeline');
+              removeTweets(location);
+              appendTweets(location, 3);
+              location.slideUp().slideDown();
+             
+          });
+
+          $("#button5").on("click", function () {
+              var location = $(this).closest('#buttonRow').closest('#userTimelines').find('#timeline');
+              removeTweets(location);
+              appendTweets(location, 4);
+              location.slideUp().slideDown();
+             
+          });
+
+
+
+
+        });
+
+
+
+
+         
+         
+      
+       
+
+     </script> 
+  </body>
+</html>
