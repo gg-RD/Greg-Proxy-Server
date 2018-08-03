@@ -1,0 +1,235 @@
+/*div {
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+}*/
+
+/*padding right and left are 28*/
+/*padding top and bottum are 8*/
+/*body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}*/
+
+/* Nav Bar specific styles (includes top and middle bar) */
+/*#navBar{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}*/
+
+
+/*Top Bar Specific Styles */
+/*#topBar {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid lightgrey;
+  height: 40px;
+  background-color: white;
+}*/
+
+/*.topBarWidget {
+  border-right: 1px solid #e5e5e5;
+  margin-right: 0px;
+  margin-left: 0px;
+}*/
+
+/*.headerTopBarImage {
+  height: 15px;
+  padding-left: 28px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-right: 28px;
+}
+*/
+/*Middle Bar Specific Styles */
+/*#middleBar {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+}
+*/
+/*#leftMiddleSpacingBar {
+  width: 25%;
+}
+#rightMiddleSpacingBar {
+  width: 25%;
+}
+*/
+/* Bottom Bar specific Styles */
+
+/*#bottomBar {
+  display: flex;
+  padding-top: 110px;
+  height: 60px;
+  width: 100%;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid lightgrey;
+  justify-content: center;
+}*/
+/*#bottomBarslider {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+}
+*//*#bottomBarsliderMoveLeft {
+  width: 60px;
+}
+#bottomBarsliderMoveLeft img{
+  width: 16px;
+  height: 16px;
+  margin-top: 22px;
+  margin-left: 22px;
+}*/
+/*#bottomBarSliderMainContent {
+  width: 84%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}*/
+
+/*.transitionSlider {
+  
+}
+*/
+
+/*#bottomBarsliderMoveRight {
+  width: 60px;
+}
+#bottomBarsliderMoveRight img{
+  width: 16px;
+  height: 16px;
+  margin-top: 22px;
+  margin-left: 22px;
+}
+#bottomBarsliderMainContentIconHolder{
+  width: 60px;
+  display: flex;
+}*/
+/*#returnsIcon {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 60%;
+  width: 65%;
+}*/
+/*#nikePlusIcon {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 40%;
+  width: 70%;
+}
+*/
+/*#bottomBarSliderMainContentTextHolder {
+
+  display: flex;
+  margin-right: 10px;
+}
+#bottomBarsliderMainContentText {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Helvetica';
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  color: #222222;
+}*/
+
+/*#bottomBarSliderMainContentSubtitleHolder {
+  display:flex;
+  margin-right: 5px;
+}
+#bottomBarsliderMainContentSubtitle {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Helvetica';
+  font-size: 11px;
+  font-weight: lighter;
+  color: #323232;
+}
+#bottomBarSliderMainContentMoreHolder {
+  display: flex;
+  margin-right: 5px;
+}
+#bottomBarsliderMainContentMore {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Helvetica';
+  font-size: 11px;
+  font-weight: lighter;
+  text-decoration: underline;
+  color: black;
+}*/
+
+/* Main page (ie page content) */
+/*.parent {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}*/
+/*.WidgetText {
+  height: 50%;
+  align-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Helvetica';
+  font-style: normal;
+}*/
+
+/*.middleWidgets {
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+*/
+/*#middleWidget {
+  height: 40px;
+  width: 50%;
+}*/
+
+/*.rightWidgets {
+  border-left: 1px solid #e5e5e5;
+  border-right: none;
+  margin-right: 0px;
+  margin-left: auto;
+}
+*/
+/*.search { 
+  display: flex;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid lightgrey;
+  width: 200px;
+  margin-right: 20px;
+}*/
+/*.search img {
+  height: 100%;
+  width: 40px;
+  
+}*/
+
+/*.inputField {
+  margin-left: 5px;
+  margin-top: 2px;
+  height: 90%;
+  width: 145px;
+
+  display: inline-block;
+
+  border: none;
+  font-size: 14px;
+  font-family: 'Helvetica';
+  color: lightgrey;
+}
+*/
+/*input:focus {
+  outline: none;
+}*/
+/*.nike img {
+  height: 55%;
+}*/
