@@ -1,0 +1,1 @@
+module.exports.access_token = '8255024479.55b167a.e671222f18d948bfb33631c8956e3928'

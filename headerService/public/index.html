@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>countdown</title>
+</head>
+<body style = "margin-top: 0px; margin-right: 0px; margin-left: 0px; margin-bottom: 0px;">
+   <link rel="stylesheet" href="./style.css">
+  <div id="header" style = "width: 100%;"></div>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src = "bundle.js"></script>
+  <script src="./headerService"></script>
+  <script>
+    var header = window.Header;
+      ReactDOM.render(
+      React.createElement(Header),
+      document.getElementById('header')
+    );
+  </script>
+</body>
+</html>

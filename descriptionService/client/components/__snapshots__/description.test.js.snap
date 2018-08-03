@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Description Component Description Component should render as expected 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="blank"
+  >
+    something else
+  </div>
+  <div
+    className="content"
+  >
+    <ShoeName
+      data={
+        Array [
+          Object {
+            "shoe_cat": "",
+            "shoe_descpription": "",
+            "shoe_name": "",
+            "shoe_price": "",
+            "shoe_shown": "",
+            "shoe_size": Array [],
+            "shoe_style": "",
+          },
+        ]
+      }
+    />
+    <SizeTable />
+    <AddToCart />
+    <div
+      className="shippings-main"
+      onClick={[Function]}
+    >
+      FREE SHIPPING & RETURNS
+      <div
+        className="icon"
+      >
+        <FontAwesome
+          name="fas fa-plus"
+        />
+         
+      </div>
+    </div>
+    <div
+      className="hidden"
+    >
+      <ShippingReturns />
+    </div>
+    <div
+      className="shippings-main"
+      onClick={[Function]}
+    >
+      REVIEWS (3)
+      <div
+        className="icon"
+      >
+        <FontAwesome
+          name="fas fa-plus"
+        />
+         
+      </div>
+    </div>
+    <div
+      className="hidden"
+    >
+      <Reviews />
+    </div>
+    <ShoeDescription
+      data={
+        Array [
+          Object {
+            "shoe_cat": "",
+            "shoe_descpription": "",
+            "shoe_name": "",
+            "shoe_price": "",
+            "shoe_shown": "",
+            "shoe_size": Array [],
+            "shoe_style": "",
+          },
+        ]
+      }
+    />
+  </div>
+</div>
+`;
